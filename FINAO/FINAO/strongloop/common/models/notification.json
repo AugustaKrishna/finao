@@ -1,0 +1,33 @@
+{
+    "name": "notification",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "_id": {
+            "type": "number",
+            "required": true
+        },
+        "notifications" :
+        {
+            "count": {
+                "type": "number",
+                "required": true
+            },
+            "lastSent": {
+                "type": "string",
+                "required": true
+            },
+            "lastMessage": {
+                "type": "string",
+                "required": true
+            }
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": []
+}

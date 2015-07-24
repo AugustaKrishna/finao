@@ -1,0 +1,44 @@
+{
+    "name": "usernotification",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "_id": {
+            "type": "number",
+            "required": true
+        },
+        "userid": {
+            "type": "string"
+        },
+        "bucket": {
+            "type": "number"
+        },
+		 
+        "notifications": [
+            {
+                "notificationid": {
+                    "type": "string"
+                },
+                "Notificationtype": {
+                    "type": "string"
+                },
+                "from": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "date": {
+                    "type": "string"
+                }
+            }
+        ]
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": []
+}

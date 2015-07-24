@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A1E195A-35BC-41B8-89F7-4CF94B07A95A}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mockup</RootNamespace>
+    <AssemblyName>Mockup</AssemblyName>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="content\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="content\bootstrap\css\bootstrap.css" />
+    <Content Include="content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="content\bootstrap\js\bootstrap.js" />
+    <Content Include="content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="content\css\images.css" />
+    <Content Include="content\css\landing.css" />
+    <Content Include="content\fonts\oswald\generator_config.txt" />
+    <Content Include="content\fonts\oswald\oswald-demo.html" />
+    <Content Include="content\fonts\oswald\oswald-webfont.svg" />
+    <Content Include="content\fonts\oswald\specimen_files\easytabs.js" />
+    <Content Include="content\fonts\oswald\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="content\fonts\oswald\specimen_files\specimen_stylesheet.css" />
+    <Content Include="content\fonts\oswald\stylesheet.css" />
+    <Content Include="content\fonts\proximanova\generator_config.txt" />
+    <Content Include="content\fonts\proximanova\proximanova-light-demo.html" />
+    <Content Include="content\fonts\proximanova\proximanova-light-webfont.svg" />
+    <Content Include="content\fonts\proximanova\specimen_files\easytabs.js" />
+    <Content Include="content\fonts\proximanova\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="content\fonts\proximanova\specimen_files\specimen_stylesheet.css" />
+    <Content Include="content\fonts\proximanova\stylesheet.css" />
+    <Content Include="content\images\backtop.png" />
+    <Content Include="content\images\blur-background.jpg" />
+    <Content Include="content\images\captcha.jpg" />
+    <Content Include="content\images\finao-sample-img.jpg" />
+    <Content Include="content\images\finao.jpg" />
+    <Content Include="content\images\fireworks.png" />
+    <Content Include="content\images\fitness.jpg" />
+    <Content Include="content\images\icon-close.png" />
+    <Content Include="content\images\icons\aaa.png" />
+    <Content Include="content\images\icons\angle.png" />
+    <Content Include="content\images\icons\bell.png" />
+    <Content Include="content\images\icons\bulb.jpg" />
+    <Content Include="content\images\icons\family.png" />
+    <Content Include="content\images\icons\globe.png" />
+    <Content Include="content\images\icons\icon-all.png" />
+    <Content Include="content\images\icons\icon-camera.png" />
+    <Content Include="content\images\icons\icon-finao-shop.jpg" />
+    <Content Include="content\images\icons\icon-finao.png" />
+    <Content Include="content\images\icons\icon-home.png" />
+    <Content Include="content\images\icons\icon-nike-name.png" />
+    <Content Include="content\images\icons\icon-notifications.png" />
+    <Content Include="content\images\icons\icon-post-finao.png" />
+    <Content Include="content\images\icons\icon-profile.png" />
+    <Content Include="content\images\icons\icon-right-arrow.png" />
+    <Content Include="content\images\icons\icon-settings.png" />
+    <Content Include="content\images\icons\icon-share-options.png" />
+    <Content Include="content\images\icons\icon-video.png" />
+    <Content Include="content\images\icons\jostern-logo-name.jpg" />
+    <Content Include="content\images\icons\jostern-logo.png" />
+    <Content Include="content\images\icons\justdoit.png" />
+    <Content Include="content\images\icons\nike.png" />
+    <Content Include="content\images\icons\paper.png" />
+    <Content Include="content\images\icons\school.png" />
+    <Content Include="content\images\icons\search.png" />
+    <Content Include="content\images\icons\travel.png" />
+    <Content Include="content\images\icons\trophy-balck.png" />
+    <Content Include="content\images\icons\trophy.png" />
+    <Content Include="content\images\icons\user.png" />
+    <Content Include="content\images\login-facebook.png" />
+    <Content Include="content\images\logo-new.jpg" />
+    <Content Include="content\images\logo-small.png" />
+    <Content Include="content\images\logo.png" />
+    <Content Include="content\images\mitchell.jpg" />
+    <Content Include="content\images\Mountain.jpg" />
+    <Content Include="content\images\or.jpg" />
+    <Content Include="content\images\professional.jpg" />
+    <Content Include="content\images\scott.png" />
+    <Content Include="content\images\share-on-facebook.jpg" />
+    <Content Include="content\images\share-on-twitter.jpg" />
+    <Content Include="content\images\sprite.png" />
+    <Content Include="content\images\travel.jpg" />
+    <Content Include="content\images\wallace.jpg" />
+    <Content Include="content\js\jquery-2.1.0.min.js" />
+    <Content Include="Footer.html" />
+    <Content Include="Header.html" />
+    <Content Include="home.html" />
+    <Content Include="Home_scrolled.html" />
+    <Content Include="Post_screen1.html" />
+    <Content Include="Profile_new-FINAO.html" />
+    <Content Include="Profile_photos.html" />
+    <Content Include="Profile_public_FINAOS-posts.html" />
+    <Content Include="Landing.html" />
+    <Content Include="Profile_BGR.html" />
+    <Content Include="Profile_default_no-image.html" />
+    <Content Include="Profile_default_with-image.html" />
+    <Content Include="Profile_finao-posts.html" />
+    <Content Include="Profile_FINAOs.html" />
+    <Content Include="Profile_followers_education.html" />
+    <Content Include="Profile_following.html" />
+    <Content Include="Profile_inspirations.html" />
+    <Content Include="Profile_post-options.html" />
+    <Content Include="Profile_share.html" />
+    <Content Include="Profile_tiles.html" />
+    <Content Include="Profile_tiles_finaos.html" />
+    <Content Include="Profile_tracking-options.html" />
+    <Content Include="splash.html" />
+    <Content Include="Web.config" />
+    <Content Include="Profile.html" />
+    <Content Include="Profile_followers.html" />
+    <Content Include="Profile_public.html" />
+    <Content Include="Profile_public_finaos.html" />
+    <Content Include="Profile_public_following.html" />
+    <Content Include="Profile_public_following_tiles.html" />
+    <Content Include="Profile_public_follow_tiles.html" />
+    <Content Include="Profile_public_inspired.html" />
+    <Content Include="Profile_public_scrolled.html" />
+    <Content Include="Profile_public_tiles.html" />
+    <Content Include="Profile_public_tiles_finaos.html" />
+    <Content Include="settings_my_profile.html" />
+    <Content Include="settings_tagnotes.html" />
+    <Content Include="Profile_public_photos.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="content\fonts\oswald\oswald-webfont.eot" />
+    <Content Include="content\fonts\oswald\oswald-webfont.ttf" />
+    <Content Include="content\fonts\oswald\oswald-webfont.woff" />
+    <Content Include="content\fonts\proximanova\proximanova-light-webfont.eot" />
+    <Content Include="content\fonts\proximanova\proximanova-light-webfont.ttf" />
+    <Content Include="content\fonts\proximanova\proximanova-light-webfont.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="favicon.ico" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4766/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="true" VerifyCodeBehindEvents="true">
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="true" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

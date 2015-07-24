@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "FINAODs": {
+    "host": "52.11.223.77",
+    "port": 27017,
+    "database": "finao",
+    "username": "finaodb",
+    "password": "password",
+    "name": "mongoDs",
+    "connector": "mongodb"
+  }
+}

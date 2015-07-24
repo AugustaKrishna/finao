@@ -1,0 +1,60 @@
+
+ <!-- Written by Sudheer -->
+
+ <div class="container">
+
+<div class="row">
+
+
+<div class="col-sm-3">
+<div class="personnelprofile">
+<a href="#/editprofile" class="btn btn-default">Edit my profile</a>
+<a href="#/notifications"  ng-class="{active: activeClass}" class="btn btn-default">Notifications</a>
+</div>
+
+<div id="finaoFooter">
+    
+<a href="/gear.html" class="finaoGear ng-scope">
+    <span>Gear</span>
+    <small>Failure is not an option</small>
+</a>
+
+
+
+    <ul class="finaoFooterLinks list-unstyled ng-scope">
+    <li><a href="/about/">About Us</a></li>
+    <li><a href="/about/aboutus_termsofuse">Terms of Use</a></li>
+    <li><a href="/about/aboutus_privacypolicy">Privacy Policy</a></li>
+    </ul>
+    <ul class="finaoFooterSocial list-unstyled ng-scope">
+    <li><a href="https://twitter.com/FINAONation" ><i class="fa fa-twitter-square"></i></a></li>
+    <li><a href="https://www.facebook.com/FINAONation" ><i class="fa fa-facebook-square"></i></a></li>
+    <li><a href="http://www.pinterest.com/finaonation" ><i class="fa fa-pinterest-square"></i></a></li>
+    <li><a href="http://instagram.com/finaonation" ><i class="fa fa-instagram"></i></a></li>
+</ul>
+</div>
+
+</div>
+
+
+
+
+
+<div class="col-sm-9">
+<div id="fn-profile-content" ui-view="fn-profile-content" class="ng-scope"><a class="btn btn-primary createFinao fn-icon-cross ng-scope" ng-click="deleteNotification(false)">Delete All</a>
+
+<div ng-if="!me.notificationCount" class="ng-scope">
+    <p>You don't currently have notifications!</p>
+</div></div>
+</div>
+   
+
+
+
+
+
+</div> <!-- form division -->
+</div> <!-- row division -->
+</div><!--  container division -->
+
+ <!-- Written by Sudheer -->

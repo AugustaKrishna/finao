@@ -1,0 +1,70 @@
+{
+
+
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "tile": {
+    "dataSource": "FINAODs",
+    "public": true
+  },
+  "finaouser": {
+    "dataSource": "FINAODs",
+    "public": true
+  },
+  "notification": {
+    "dataSource": "FINAODs",
+    "public": true
+  },
+  "userfinao": {
+    "dataSource": "FINAODs",
+    "public": true
+  },
+  "usernotification": {
+    "dataSource": "FINAODs",
+    "public": true
+  },
+  "groupfinao": {
+    "dataSource": "FINAODs",
+    "public": true
+  },
+    "userpost": {
+    "dataSource": "FINAODs",
+    "public": true
+  },
+   "a_userfinao": {
+    "dataSource": "FINAODs",
+    "public": true
+  }
+
+}

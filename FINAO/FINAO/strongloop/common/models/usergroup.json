@@ -1,0 +1,39 @@
+{
+"name": "usergroup",
+"base": "PersistedModel",
+"idInjection": true,
+"options": {
+"validateUpsert": true
+},
+"properties": {
+    "_id": {
+    "type": "number",
+    "required": true
+},
+"name": {
+    "type": "string"
+},
+"description": {
+    "type": "string"
+},
+"creator": {
+"type": "string"
+},
+
+"admin": [{
+    "user":{
+    "type": "string"
+    },
+    "members": {
+    "type": "string"
+    }
+}]
+},
+"validations": [],
+"relations": {},
+"acls": [],
+"methods": []
+}
+
+
+

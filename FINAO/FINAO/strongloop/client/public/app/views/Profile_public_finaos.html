@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FINAONATION</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[rel="tooltip"]').tooltip();
+
+    });
+</script>
+    <!--<script>
+        $(function () {
+            $("#includedContent").load("Header.html");
+        });
+    </script>-->
+</head>
+
+<body>
+    <!--import header.html-->
+    <!--<div id="includedContent">
+    </div>-->
+    <!--import header.html-->
+
+    <div class="container white-background">
+        <div class="content-wrapper pageone" style="margin-top: 23px;">
+            <div class="row marbot20">
+                <img src="../app/content/images/banner.jpg" class="img-responsive" style="width: 100%;" />
+          
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-3">
+                        <a href="#">
+                            <img src="../app/content/images/krishvii.jpg" width="100%" />
+                          
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>
+                            krishvii
+                        </h2>
+                        <p>
+                            This person has not created a biography yet
+                        </p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="edit_button">
+                            <a href="#"> Edit My Profile </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-3 col-xs-5 leftmenu">
+                        <ul>
+                            <li>
+                                <a class="active" href="#/finaos">FINAOs  <span> {{finaoCount}} </span></a>
+                            </li>
+                            <li>
+                                <a href="#">Tiles  <span> 1 </span></a>
+                            </li>
+                            <li>
+                                <a href="#">Posts  <span> 1 </span></a>
+                            </li>
+                            <li>
+                                <a href="#">Inspired  <span> 1 </span></a>
+                            </li>
+                            <li> 
+                                <a href="#">Following  <span> 1 </span></a>
+                            </li>
+                            <li>                               
+                                <a href="#">Followers  <span> 1 </span></a>
+                            </li>
+                            <li class="mar0">
+                                <a href="#"> Group <span> 1 </span></a>
+                            </li>
+                        </ul>
+                        <div class="col-lg-12 pad0">
+                            <div class="option">
+                                <h5> Gear </h5>                            
+                                <span>Failure is not an option</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-xs-7 pad0 marbot20">
+                        <div class="col-lg-12 pad0">
+                            <div class="col-lg-4 pad0">
+                                <a class="create-fin" href="" ng-click="go_create();">
+                                    <i class="fa fa-arrows"></i>
+                                    Create a finao
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                &nbsp;
+                            </div>
+                            <div class="col-lg-4  pad0">
+                                <a class="create-fin right" href="#">
+                                    <i class="fa fa-pied-piper"></i>
+                                    post
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-xs-7 pad0 finotable">
+                   
+                   
+                            <div class="col-lg-12  tabsru" ng-repeat="fino in finaoList">
+                                <div class="col-lg-6 pad0">
+                                    <a class="runsym col-lg-2 pad0" rel="tooltip" href="#" data-toggle="tooltip" title="Tile {{fino.tile}}" bs-tooltip>
+                                        <i class="fa fa-street-view"></i>
+                                    </a>
+                                    <h3 class="col-lg-3 pad0">
+                                        {{fino.description}}
+                                    </h3>
+                                </div>
+                                <div class="col-lg-6 pad0">
+                                    <div class="col-lg-6 pad0 actionicons align-right">
+                                        <a title="edit" class="edit" href="#/createfinaos/{{fino.id}}"><i class="fa fa-pencil-square-o"></i>  </a>
+                                        <a title="close" class="delete" href="" ng-click="deleteFinao(fino.id)"> <i class="fa fa-times"></i>  </a>
+                                    </div>
+                                    <div class="col-lg-6 pad0">
+                                        <a class="track align-right" href="#">
+                                            <span> <i class="fa fa-caret-square-o-down"></i> </span>
+                                            {{fino.status}}
+                                        </a>
+                                    </div>
+                                </div>
+
+                            
+                        </div>
+                    </div> <!--finotable-->
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.carousel').carousel();
+    });
+</script>
+
+
+

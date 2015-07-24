@@ -1,0 +1,60 @@
+{
+  "name": "finaouser",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+      "_id": {
+          "type": "number",
+          "required": true
+      },
+      "password": {
+          "type": "string",
+          "required": true
+      },
+      "userName": {
+        "type": "string",
+        "required": true
+      },
+      "firstName": {
+          "type": "string",
+          "required": true
+      },
+      "lastName": {
+          "type": "string",
+          "required": true
+      },
+      "email": {
+          "type": "string",
+          "required": true
+      },
+      "birthDate": {
+          "type": "string",
+          "required": true
+      },
+      "notifications" :
+      {
+          "count": {
+              "type": "number",
+              "required": true
+          },
+          "lastSent": {
+              "type": "string",
+              "required": true
+          },
+          "lastMessage": {
+              "type": "string",
+              "required": true
+          }
+      }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
+
+
+
