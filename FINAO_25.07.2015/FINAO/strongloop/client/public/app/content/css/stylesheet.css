@@ -1,0 +1,132 @@
+﻿body{padding:0px;margin:0px;}
+ul { list-style-type:none;padding:0px;margin:0px;}
+h1,h2,h3,h4,h5,h6 { margin:0px;}
+.marbot20 { margin-bottom:20px;}
+h2 { font-size:30px;}
+.align-right{ text-align:right;}
+.marbot15 { margin-bottom:15px;}
+.padbot20 { padding-bottom:20px;}
+.border-bottom {border-bottom:1px solid #ddd;}
+.pad-top20 { padding-top:20px;}
+
+.pageone h2 {font-weight:bold;text-transform:uppercase;color:#000;margin-bottom:10px; }
+.pageone p { font-size:15px;}
+.edit_button { width:140px;}
+.edit_button a { background:#ccc;border-color: #bfbfbf;color: #000;
+text-align:center;padding: 10px 0px;border-radius:4px;display:block;font-family: 'oswaldbook';}
+.edit_button a:hover { background:#000 url(../../content/images/icons/icon-post-finao.png) no-repeat 5px  9px ;color:#fff; }
+.mar0 { margin:0px !important;}
+.leftmenu { margin-bottom:30px;}
+.leftmenu ul {border:1px solid #ddd;margin-bottom:20px; }
+.leftmenu ul li {margin: 0 0 9px;}
+.leftmenu ul li a {font-family: 'oswaldbook';font-size:18px;color:#000;text-transform:uppercase;border:1px solid #ddd;display:block;padding:7px 15px; }
+.leftmenu ul li a:hover { background:#000;color:#fff;text-transform:uppercase;padding-left:35px;}
+.leftmenu ul li a.active{color:#fd6d20;} 
+.leftmenu ul li a span {float:right;}
+a.create-fin {background:#fd6d20; color: #fff; width: 170px;display:block; height:32px;border-radius:3px;text-align:center;font-family: 'oswaldbook';font-size:15px;line-height:30px;}
+a.create-fin:hover { background:#000;color:#fff;transform:scale(1.1);text-transform:uppercase;}
+.finotable{ border:1px solid #ddd; padding: 5px 0;}
+.finotable h3 {font-family: "oswaldbook";font-size:17px; line-height: 30px;}
+a.runsym .fa-street-view {border:1px solid #ddd; padding: 5px;color:#fd6d20; margin-top: 3px; }
+a.track { background:#ccc;width:150px;text-align:center;height:32px;line-height:31px;display:block;color:#fff;font-family: "oswaldbook";font-size:16px; margin: 0 0 0 20%;}
+.right{float:right;}
+.actionicons a i {  font-size: 20px;line-height: 32px;}
+.pad0 { padding:0px !important;}
+a.track:hover {background:#000;border:1px solid #ddd; }
+a.track span  i {font-size:20px; }
+.tabsru {padding: 10px; border-bottom: 1px solid #ddd;}
+.tabsru:hover  {background: #000;color:#fff; }
+.actionicons a i:hover { color:#fff;}
+.tabsru  .tooltip { background:#000; height:70px ;width:100px;border-radius:15px 0px 15px 0px;font-size:17px;font-family: "oswaldbook";color:#fd6d20;margin-top:-15px;border:3px solid #fd6d20 ;}
+.option { border:1px solid #000;border-radius:4px;}
+.option h5 { font-size:17px;font-family: "oswaldbook";color:#fd6d20;text-align:center;   padding-top: 25px;}
+.option span {font-size:15px;font-family: "oswaldbook";color:#fd6d20;text-align:center;width:100%;display:block;height:50px; }
+.option:hover  {background:#000;color:#fff; border:2px solid #fd6d20 ;text-transform:uppercase;}
+
+
+/*Createfinao*/
+.createheader {background:#000;margin-bottom:20px; }
+.createheader h1 {font-size:25px;font-family: "oswaldbook";color:#fff;text-transform:uppercase;padding:20px; }
+.createheader h1 span { font-size:17px;font-family: "oswaldbook";color:#fd6d20;}
+.create { border: 1px solid #ddd; height: 160px;padding-top: 50px;text-align: center; width: 100%;}
+.create i { font-size:30px;}
+.create h6 {  border-top: 1px solid #ddd;font-size: 19px;margin-top: 36px;padding: 10px 0;font-family: "oswaldbook";text-align:left;padding-left:10px;}
+.create:hover { background:#000;text-transform:uppercase;color:#fd6d20;   border-radius: 5px;
+border: 2px solid #ddd;transform: scale(1.1);}
+
+
+/**/
+.createfile p {font-size:16px;font-family: "oswaldbook";margin-bottom: 20px; }
+.createfile button { width:300px;height:35px;font-size:16px;font-family: "oswaldbook";color:#fff;}
+.createfile input:focus {border:1px solid #fd6d20; }
+.createfile .checkbox input {transform:scale(1.3) ;}
+.createfile .checkbox span {font-size:16px;font-family: "oswaldbook";text-transform:uppercase;color:#ccc; }
+.createfile .checkbox input:focus {transform:scale(1.8);border:1px solid #fd6d20; }
+button.save{ background:#15DFD3;}
+button.change {background:#fd6d20; }
+.createfile button:hover{ background:#333;color:#fff;text-transform:uppercase;}
+
+
+/*Home feed */
+.homefeed {margin-bottom:20px;}
+.homefeedtop { }
+.homefeedtop img {border:1px solid #ddd; padding: 7px;}
+.homefeedtop span {font-size:20px;font-family: "oswaldbook";margin-left: 15px;}
+.homefeedtop h6 {font-size:16px;font-family: "oswaldbook";   padding-top: 30px; }
+.border-right { border-right:1px solid #ddd;}
+.message_post i{ border:1px solid #ddd;padding:5px;color:#fd6d20;}
+.message_post p{font-size:15px;font-family: "oswaldbook"; text-transform:capitalize;line-height:25px; }
+.like i {font-size:17px;}
+i.fa-angle-up { color: #000;font-size: 26px;}
+i.fa-angle-up:hover { transform:scale(1.5)}
+.like i.star {border:4px solid #fd6d20 ;padding: 5px 15px;color:#fd6d20; margin-right: 15px; }
+.myslider img {height:300px !important;width:400px !important;}
+
+a.ahead {background:#15DFD3;  color: #fff; display: block;font-family: "oswaldbook"; font-size: 16px; height: 32px;
+ line-height: 31px; margin: 0 0 0 20%; text-align: center; width: 150px; }
+a.ahead:hover { background:#000;border:1px solid #ddd;}
+.orange{color:#fd6d20;}
+.like .dropdown button {background:#fff;border:0px; }
+.like ul.dropdown-menu {  width: 100%; }
+.like .dropdown button span { font-size:17px;font-family: "oswaldbook";}
+.like ul.dropdown-menu ul li { float:left;}
+ul.social li { margin:0px 10px 0px 0px;}
+ul.social li a i {font-size:21px;color:#000; }
+ul.social li a i:hover { color:#fd6d20;transform:scale(1.5)}
+.dropdown-menu h6 { font-size:17px;font-family: "oswaldbook";}
+.dropdown-menu a { color:#000;}
+.dropdown button a { text-indent:-999em;display:block;width:25px;height:15px;}
+.dropdown button a.up {background: url(../../content/images/up.png) no-repeat ;} 
+.dropdown button a.up:hover {background: url(../../content/images/down.png) no-repeat ;}
+.open a.down { background: url(../../content/images/down.png) no-repeat ;}
+.open a.up { display:none;}
+.homefeedcreate .create {background:#000; border: 1px solid #ddd;height: 110px;padding-top: 17px; text-align: center;width: 100%;margin-top:10px;margin-bottom:20px;color: #fd6d20;}
+.homefeedcreate .create h6 {  margin-top: 20px;}
+.homefeedcreate .create:hover { background:#000; color: #fd6d20;transform:scale(1);text-transform:none;}
+
+/**/
+.group { border: 2px solid #ddd;padding: 20px; }
+.group a img {  border: 2px solid #ddd;padding: 2px; }
+.group h5 { font-size:20px;font-family: "oswaldbook";}
+
+/**/
+.creategroup { background:#000;color:#fff;font-size:22px;font-family: "oswaldbook";text-transform:uppercase;padding:20px;}
+.cr_grp button {width:100%;color:#fff;font-size:19px;font-family: "oswaldbook"; }
+.cr_grp button:hover { background:#000;color:#fff;text-transform:uppercase;}
+.cr_grp .checkbox span {font-size:18px;font-family: "oswaldbook";}
+.cr_grp .checkbox input { transform:scale(1.5)}
+.cr_grp textarea { min-height:130px;}
+
+/**/
+.grouplist a.create-fin {text-transform:uppercase; }
+label.search { font-size:16px;font-family: "oswaldbook";font-weight:normal;}
+
+/**/
+    .modal-title img {width:180px;}
+.modal-title {text-align:center;}
+.modal-footer {background-color:#44d1ca; padding: 15px 20px; font-size:32px; text-transform:uppercase; text-align:center; font-family: "oswaldbook";}
+.modal-footer a{color:#FFF; border-radius:5px;}
+.modal-body {font-family: "oswaldbook"; text-align:center; font-size:18px;}
+.modal-footer .yes {color:#FFF; padding-right:20px;}
+.modal-footer .no {color:#f96713; }
+

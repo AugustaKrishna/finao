@@ -1,0 +1,52 @@
+{
+"name": "groupfinao",
+"base": "PersistedModel",
+"idInjection": true,
+"options": {
+"validateUpsert": true
+},
+"properties": {
+"_id": {
+"type": "number",
+"required": true
+},
+"groupid": {
+"type": "string"
+},
+"bucket": {
+"type": "string"
+},
+"name": {
+"type": "string"
+},
+
+"finaos": [{
+"tile":{
+"type": "string"
+},
+"description": {
+"type": "string"
+},
+"visibility": {
+"type": "string"
+},
+"status": {
+"type": "string"
+}
+}],
+"registeredDate": {
+"type": "string"
+},
+"lastAccessedDate": {
+"type": "string"
+}
+
+},
+"validations": [],
+"relations": {},
+"acls": [],
+"methods": []
+}
+
+
+

@@ -1,0 +1,152 @@
+ <!-- Written by Nikhita -->
+ <div class="container">
+
+<div class="row">
+
+
+<div class="col-sm-3">
+<div class="personnelprofile">
+<a href="#/editprofile" ng-class="{active: activeClass}" class="btn btn-default">Edit my profile</a>
+<a href="#/notifications" class="btn btn-default">Notifications</a>
+</div>
+
+<div id="finaoFooter">
+    
+<a href="/gear.html" class="finaoGear ng-scope">
+    <span>Gear</span>
+    <small>Failure is not an option</small>
+</a>
+
+
+
+    <ul class="finaoFooterLinks list-unstyled ng-scope">
+    <li><a href="/about/">About Us</a></li>
+    <li><a href="/about/aboutus_termsofuse">Terms of Use</a></li>
+    <li><a href="/about/aboutus_privacypolicy">Privacy Policy</a></li>
+    </ul>
+    <ul class="finaoFooterSocial list-unstyled ng-scope">
+    <li><a href="https://twitter.com/FINAONation" ><i class="fa fa-twitter-square"></i></a></li>
+    <li><a href="https://www.facebook.com/FINAONation" ><i class="fa fa-facebook-square"></i></a></li>
+    <li><a href="http://www.pinterest.com/finaonation" ><i class="fa fa-pinterest-square"></i></a></li>
+    <li><a href="http://instagram.com/finaonation" ><i class="fa fa-instagram"></i></a></li>
+</ul>
+</div>
+
+</div>
+
+
+
+
+
+<div class="col-sm-9">
+
+
+    <form class="form-horizontal ng-scope ng-pristine ng-valid ng-valid-required" name="editMyProfileForm" ng-submit="editMyProfile()" novalidate="">
+        <!-- ngRepeat: error in errors -->
+        <div class="profileEditContainer">
+
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="firstnamProfileEdit">First Name</label>
+                <div class="formInputCol col-sm-6">
+                    <input type="text" class="form-control ng-pristine ng-valid-minlength ng-valid ng-valid-required" id="firstnamProfileEdite" placeholder="FIRST NAME" ng-model="me.profile.first_name" required="" ng-minlength="2">
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="lastnameProfileEdit">Last Name</label>
+                <div class="formInputCol col-sm-6">
+                    <input type="text" class="form-control ng-pristine ng-valid-minlength ng-valid ng-valid-required" id="lastnameProfileEdit" placeholder="LAST NAME" ng-model="me.profile.last_name" required="" ng-minlength="2">
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+          </div>
+
+<div class="row">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="usernameProfileEdit">User Name</label>
+                <div class="formInputCol col-sm-6">
+                    <input type="text" class="form-control ng-pristine ng-valid" id="usernameProfileEdit" placeholder="USER NAME" ng-model="me.profile.username" disabled="">
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            </div>
+
+<div class="row">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="bioProfileEdit">Your Bio</label>
+                <div class="formInputCol col-sm-6">
+                    <textarea id="bioProfileEdit" ng-model="me.profile.bio" placeholder="Tell us about yourself" class="ng-pristine ng-valid form-control"></textarea>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            </div>
+
+<div class="row">
+
+            <div class="form-group">
+             <div class="col-sm-1">
+             </div>
+            <div class="col-sm-2">
+                <button class="btn btn-success" type="submit" ng-disabled="editMyProfileForm.$invalid" ng-hide="showSuccess">Save</button>
+                <img src="/skin/frontend/social/default/images/ajax-loader.gif" ng-show="loading" class="ng-hide">
+                <!-- ngIf: saved -->
+            </div>
+
+            </div>
+            </div>
+    
+</form>
+
+<div class="row">
+<div class="profileImgContainer">       
+    
+<div class="col-sm-4">
+    <img ng-src="{{profile_image}}" ng-model="profile_image" id="profileimage" />
+</div>
+
+<div class="col-sm-4">
+    
+            <!-- <input type="file" accept="image/*" class="form-control" id="profile_image">
+            <a id="profile_image_button" class="btn btn-primary photoUpload">Upload  Profile Picture</a> -->
+
+            <div class="fileUpload btn btn-primary">
+    <span>Upload Profile Picture</span>
+    <input type="file" class="upload" ng-model="profile_image_file" onchange="angular.element(this).scope().showResizer(this)"
+        accept="image/*" >
+</div>
+       
+</div>
+</div>
+</div>
+
+<div class="row emptyrow">
+</div>
+
+<div class="row">
+    <div class="timelineImgContainer">
+
+    <div class="col-sm-4">
+    <img class="timelineFnMed" nd-model="banner_image" ng-src="{{banner_image}}" />
+</div>
+
+<div class="col-sm-4">
+   <div class="fileUpload btn btn-primary">
+    <span>Upload Banner Picture</span>
+    <input type="file" class="upload" ng-model="banner_image" ng-change="showResizer(banner_image_file,"banner")" >
+</div>       
+    </div>
+    </div>
+
+
+
+
+
+</div> <!-- form division -->
+</div> <!-- row division -->
+</div><!--  container division -->
+
+ <!-- Written by Nikhita -->

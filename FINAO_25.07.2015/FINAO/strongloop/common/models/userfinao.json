@@ -1,0 +1,44 @@
+{
+    "name": "userfinao",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "_id": {
+            "type": "number",
+            "required": true
+        },
+        "userid": {
+            "type": "string"
+        },
+        "bucket": {
+            "type": "number"
+        },
+        "name": {
+            "type": "string"
+        },
+        "finaos": [{
+            "tile":{
+                "type": "string"
+            },
+            "description": {
+                "type": "string"
+            },
+            "visibility": {
+                "type": "string"
+            },
+            "status": {
+                "type": "string"
+            }
+        }]
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": []
+}
+
+
+

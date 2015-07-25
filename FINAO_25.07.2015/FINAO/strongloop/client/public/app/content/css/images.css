@@ -1,0 +1,47 @@
+a.upload-img {
+    background: url(../images/icons/icon-camera.png) left top no-repeat;
+    height: 16px;
+    padding-left: 30px;
+    
+    font-size: 18px;
+    color: #bebebe;
+    font-weight: bold;
+}
+
+a.upload-video {
+    background: url(../images/icons/icon-video.png) left top no-repeat;
+    height: 19px;
+    padding-left: 30px;
+    margin-left:10px;
+    font-size: 18px;
+    color: #bebebe;
+    font-weight: bold;
+}
+
+a.home-header {
+    background: url(../images/icons/icon-home.png) left 1px no-repeat;
+    padding-left: 25px;
+    font-size: 18px;
+    color: #FFF;
+    font-family: 'oswaldbook';
+    margin-right: 10px;
+}
+
+    a.home-header:hover {
+        color: #d3d3d3;
+        text-decoration: none;
+    }
+
+a.profile-header {
+    background: url(../images/icons/icon-profile.png) left 1px no-repeat;
+    padding-left: 25px;
+    font-size: 18px;
+    color: #FFF;
+    font-family: 'oswaldbook';
+    margin-right: 10px;
+}
+
+    a.profile-header:hover {
+        color: #d3d3d3;
+        text-decoration: none;
+    }

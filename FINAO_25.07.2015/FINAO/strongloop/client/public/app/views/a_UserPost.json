@@ -1,0 +1,61 @@
+﻿{
+    "name": "userpost",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "id": {
+            "type": "number",
+            "required": true
+        },
+        "Content": {
+            "type": "string"
+        },
+        "CreatedDate": {
+            "type": "Date"
+        },
+        "LastUpdatedDate": {
+            "type": "Date"
+        },
+
+        "Image": [
+            {
+                "contenttype": {
+                    "type": "string"
+                },
+
+                "url": {
+                    "type": "string"
+
+                }
+            }
+        ],
+        "FinaoUser": {
+            "name": { "type": "string" },
+            "UserId": { "type": "number" }
+        },
+        "Finaos": {
+            "finaoid": { 
+                "type": "number"
+            },
+            "tile": {
+                "type": "string"
+            },
+            "description": {
+                "type": "string"
+            },
+            "visibility": {
+                "type": "string"
+            },
+            "status": {
+                "type": "string"
+            }
+        }
+    },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

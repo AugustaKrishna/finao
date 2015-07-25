@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html ng-app="FINAOWeb">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Finao</title>
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="app/content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/app.css">
+         <link rel="stylesheet" href="assets/css/ng-img-crop.css">
+       
+
+      
+        <link href="app/content/css/landing.css" rel="stylesheet">
+        <link href="app/content/css/images.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="app/content/fonts/proximanova/stylesheet.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="app/content/fonts/oswald/stylesheet.css" type="text/css" media="screen" />
+        <link href="app/content/css/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="app/content/css/font-awesome.min.css">
+        <script src="app/content/js/jquery-2.1.0.min.js"></script>
+        <script src="app/content/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+        
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+
+        
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+        <script src="https://cdn.rawgit.com/auth0/angular-storage/master/dist/angular-storage.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-animate.min.js"></script>
+
+        <script src="https://rawgit.com/weblogng/weblogng-client-javascript/master/release/logger.js"></script>
+        <script src="https://rawgit.com/weblogng/angular-weblogng/master/dist/angular-weblogng.js"></script>
+         <script src="assets/js/imgcrop/ng-img-crop.js"></script>
+    </head>
+    <body ng-controller="MainCtrl as main" ng-cloak>
+        <nav class="navbar navbar-default header-part">
+            <!-- Written by Nikitha -->
+            <ul class="nav navbar-nav navbar-left col-xs-5">
+                <li><a href="#/HomeFeed"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-user"></i><strong>{{main.currentUser.email}}</strong></a></li>
+            </ul>
+
+               <!-- <button ng-if="main.currentUser" class="btn btn-default navbar-btn"
+                    ng-click="main.logout()">Logout <strong>{{main.currentUser.email}}</strong></button>
+                -->
+
+             
+                    <!-- ngIf: me.loggedIn -->
+                    <div class="logo col-xs-3" ng-class="{ center: main.currentUser !== '' }">
+                        <a href="/">
+                            <img src="../../assets/skin/frontend/social/default/images/logo.svg">
+                            <small>BETA</small>
+                        </a>
+                    </div>
+                
+              
+
+                <ul class="nav navbar-nav navbar-right col-xs-4">
+                    <li class="active"><a href="javascript:void(0);" ><i class="fa fa-info-circle"></i></a></li>
+                    <li class="dropdown">
+                      <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gear"></i></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="#/editprofile">Edit Profile</a></li>
+                        <li><a href="javascript:void(0);">Something else here</a></li>
+                        <li><a href="javascript:void(0);" ng-click="main.logout()">Logout</a></li>
+                       
+                       
+                      </ul>
+                    </li>
+                    <li><a href="#/notifications"><i class="fa fa-globe"></i> 10</a></li>
+                    
+                    <li>
+                        <form class="form-inline search-field">
+                        <input type="text" placeholder="SEARCH" class="form-control"/>
+                        </form>
+                    </li>
+                  </ul>
+
+                <!-- Written by Nikitha -->
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div ui-view></div>
+            </div>
+        </div>
+    
+        <script src="app/app.js"></script>
+    
+    </body>
+</html>
+
